@@ -1,179 +1,89 @@
+<!-- https://vannilla-js-basic-project-10-scroll.netlify.app/ -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    
-    <title>MinSung</title>
-    <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> 
-
-    <!-- google font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap" rel="stylesheet">
-    <!-- font awesome cdn -->
-    <script src="https://kit.fontawesome.com/f4e726081a.js" crossorigin="anonymous"></script>
-
+    <title>Scroll</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.0-web/css/all.min.css"
+    />
     <!-- styles -->
     <link rel="stylesheet" href="styles.css" />
   </head>
-
   <body>
-    <!-- main -->
-    <div class = "nav">
-        <div class = "company-name">
-                MINSUNG-TECH
+    <header id="home">
+      <!-- navbar -->
+      <nav id="nav">
+        <div class="nav-center">
+          <!-- nav header -->
+          <div class="nav-header">
+            <!-- <img src="" class="logo" alt="logo" /> -->
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <!-- links -->
+          <div class="links-container">
+            <ul class="links">
+              <li>
+                <a href="#home" class="scroll-link">home</a>
+              </li>
+              <li>
+                <a href="#about" class="scroll-link">about</a>
+              </li>
+              <li>
+                <a href="#services" class="scroll-link">Github</a>
+              </li>
+              <li>
+                <a href="#tours" class="scroll-link">Goal</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </div>
-        <div class="main">
-            <div class="title">
-                THE CRAETIVE WORLD
-            </div>
-            <div class="subtitle">
-                we challenge the limit and overcome the problems.
-            </div>
-
-    <!-- first price : email service -->
-
-            <div class="prices">
-                <div class="price-item">
-                <div class="price-item-title">
-                    Opinion to Developer
-                </div>
-                <div class="price-item-price">
-                        What you want?
-                </div>
-                <div class="price-item-detail">
-                </div>
-                <div class="price-item-detail">
-                <form id="my-form" action="https://formspree.io/f/mzbwqakz" method="POST">
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder="ex)mstoto0319@gmail.com"/>
-                    <label>Message:</label>
-                    <input type="text" name="message" />
-                    <button id="my-form-button">send</button>
-                    <p id="my-form-status"></p>
-                </form>
-                </div>
-            </div>
-                
-    <!-- second price : D-day calculator -->
-
-         
-                <div class = "price-item">
-                        <section class="section-center">
-                                <!-- image -->
-                                <article class="gift-img">
-                                  <img src="https://w.namu.la/s/43a07e65f573eb41fffe67ac0d1008fa73b5c7a04a004ff9004ddf0680524c5c5bd8a30c724fd7966bd7d3a2f60d0bd17c3cc159dd41f704f9b6dc188a21346d9474a818f14ccdbf6183f95d8ec2a9bdb6a5f142f71215fa591de1776c5eadec" alt="loading fail" width="300"/>
-                                </article>
-                                <!-- info -->
-                                <article class="gift-info">
-                                  <h3>Time To Go Home</h3>
-                                  <h4 class="giveaway">
-                                    Duty ends on Thursday, 16 November 2023, 8:30am
-                                  </h4>
-                                  <p>
-                                    
-                                  </p>
-                                  <div class="deadline">
-                                    <!-- days -->
-
-                                    <div class="deadline-format">
-                                      <div>
-                                        <h4 class="days">34</h4>
-                                        <span>days</span>
-                                      </div>
-                                    </div>
-                                    <!-- end of days -->
-                                    <!-- days -->
-                                    <div class="deadline-format">
-                                      <div>
-                                        <h4 class="hours">34</h4>
-                                        <span>hours</span>
-                                      </div>
-                                    </div>
-                                    <!-- end of days -->
-                                    <!-- minutes -->
-                                    <div class="deadline-format">
-                                      <div>
-                                        <h4 class="minutes">34</h4>
-                                        <span>mins</span>
-                                      </div>
-                                    </div>
-                                    <!-- end of days -->
-                                    <!-- minutes -->
-                                    <div class="deadline-format">
-                                      <div>
-                                        <h4 class="seconds">34</h4>
-                                        <span>secs</span>
-                                      </div>
-                                    </div>
-                                    <!-- end of days -->
-                                  </div>
-                                </article>
-                              </section>                    
-
-                </div>
-
-<!-- sidebar -->
-    <button class="sidebar-toggle">
-      <i class="fas fa-bars"></i>
-    </button>
-    <aside class="sidebar">
-      <div class="sidebar-header">
-        <div class="profile">
-                <img src="https://itimg.chosun.com/sitedata/image/202203/03/2022030300868_0.jpg" alt="profile_picture">
-                <!--Profile Title & Descruption-->
-                <h3>Jang Min Sung</h3>
-                <p>Developer</p>
+      </nav>
+      <!-- banner -->
+      <div class="banner">
+        <div class="container">
+          <h1>THE CREATIVE WORLD</h1>
+          <p>
+            This is Min-Sung, Jang's Web page project. Study about web browser and grapic styles. The Goals? We will make more complicated code and publish it. We CHALLENGE the limit and OVERCOME problems. This is just First Step. 
+          </p>
+          <a href="#tours" class="scroll-link btn btn-white">explore goal</a>
         </div>
-
-        <button class="close-btn"><i class="fas fa-times"></i></button>
       </div>
-      <!-- links -->
-      <ul class="links">
-        <li>
-          <a href="index.html">home</a>
-        </li>
-        <li>
-          <a href="about.html">about</a>
-        </li>
-        <li>
-          <a href="projects.html">projects</a>
-        </li>
-        <li>
-          <a href="contact.html">contact</a>
-        </li>
-      </ul>
-      <!-- social media -->
-      <ul class="social-icons">
-        <li>
-          <a href="https://github.com/masterjms" target = "_blank">
-            <i class="fa-brands fa-github"></i>
-        </a>
-        </li>
-        <li>
-          <a href="#">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="https://www.dankook.ac.kr/web/kor"target = "_blank">
-            <i class="fa-solid fa-building-columns"></i>
-          </a>
-        </li>
-        
-        <li>
-          <a href="#">
-            <i class="fa-brands fa-instagram"></i>
-          </a>
-        </li>
-      </ul>
-    </aside>
-<!-- JAVASCRIPT seperation -->
-<script src = "email.js"></script>
-<script src="sidebar.js"></script>
-<script src = "timer.js"></script>
+    </header>
+    <!-- about -->
+    <section id="about" class="section">
+      <div class="title">
+        <h2>about <span>us</span></h2>
+      </div>
+    </section>
+    <!-- services -->
+    <section id="services" class="section">
+      <div class="title">
+        <h2>our <span>services</span></h2>
+      </div>
+    </section>
+    <!-- contact -->
+    <section id="tours" class="section">
+      <div class="title">
+        <h2>featured <span>tours</span></h2>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer class="section">
+      <p>
+        copyright &copy; MinSung-Tech company
+        <span id="date"></span>. all rights reserved
+      </p>
+    </footer>
+    <a class="scroll-link top-link" href="#home">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <!-- javascript -->
+    <script src="app.js"></script>
   </body>
 </html>
