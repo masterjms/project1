@@ -510,5 +510,6 @@ main {
         box-shadow: var(--light-shadow);
         transition: var(--transition);
         text-align: center;
+        height: 50vh;
     }
   } 
