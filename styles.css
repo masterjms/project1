@@ -332,8 +332,12 @@ header {
 .title span {
   color: var(--clr-secondary);
 }
-#about,
-#services,
+#about {
+    height: 60vh;
+}
+#services {
+    height: 40vh;
+}
 #tours {
   height: 80vh;
 }
@@ -574,3 +578,20 @@ main {
     margin-bottom: 0.25rem;
     letter-spacing: var(--spacing);
   }
+
+/*
+=============== 
+email
+===============
+*/
+.email {
+    background: var(--clr-white);
+    padding: 1.5rem 2rem;
+    border-radius: var(--radius);
+    box-shadow: var(--light-shadow);
+    transition: var(--transition);
+    text-align: center;
+    margin-left: 5%;
+    margin-right: 5%;
+    background-color: var(--clr-primary-10);
+}
