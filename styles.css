@@ -333,13 +333,13 @@ header {
   color: var(--clr-secondary);
 }
 #about {
-    height: 60vh;
+    height: 70vh;
 }
 #services {
     height: 40vh;
 }
 #tours {
-  height: 80vh;
+  height: 55vh;
 }
 #services {
   background: var(--clr-white);
@@ -347,6 +347,7 @@ header {
 footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
+  height: 10vh;
 }
 footer p {
   color: var(--clr-white);
@@ -513,7 +514,7 @@ main {
         box-shadow: var(--light-shadow);
         transition: var(--transition);
         text-align: center;
-        height: 50vh;
+        
     }
   } 
 
