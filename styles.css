@@ -336,7 +336,7 @@ header {
     height: 70vh;
 }
 #services {
-    height: 40vh;
+    height: 105vh;
 }
 #tours {
   height: 55vh;
@@ -596,3 +596,8 @@ email
     margin-right: 5%;
     background-color: var(--clr-primary-10);
 }
+
+/* .email-tittle {
+    font-size: 1.2rem;
+    margin-bottom: 5vh;
+} */
