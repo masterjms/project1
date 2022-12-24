@@ -336,13 +336,11 @@ header {
     height: 70vh;
 }
 #services {
-    height: 105vh;
+    height: 150vh;
+    background: var(--clr-white);
 }
 #tours {
   height: 55vh;
-}
-#services {
-  background: var(--clr-white);
 }
 footer {
   background: var(--clr-grey-1);
