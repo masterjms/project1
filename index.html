@@ -96,15 +96,16 @@
           <div class = "email-title" style="font-size: 1.2rem; margin-bottom: 5vh; letter-spacing: var(--spacing);">
             Whrite Your Ideas!
           </div>
-          <div class = "email-detail">
-                <form id="my-form" action="https://formspree.io/f/mzbwqakz" method="POST">
-                    <label>Email:</label>
-                    <input type="email" name="email" placeholder="ex)mstoto0319@gmail.com"/><br>
-                    <label>Message:</label>
-                    <input type="text" name="message" /><br>
-                    <button id="my-form-button">send</button>
-                    <p id="my-form-status"></p>
-                </form>  
+          <div id="disqus_thread"></div>
+          <script>
+              (function() { 
+              var d = document, s = d.createElement('script');
+              s.src = 'https://webminseong.disqus.com/embed.js';
+              s.setAttribute('data-timestamp', +new Date());
+              (d.head || d.body).appendChild(s);
+              })();
+          </script>
+                 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
           </div>
         </article>
     </section>
@@ -183,6 +184,6 @@
     <script src="app.js"></script>
     <script src="review.js"></script>
     <script src="timer.js"></script>
-    <srcrip src="emil.js"></srcrip>
+    <script id="dsq-count-scr" src="//webminseong.disqus.com/count.js" async></script>
   </body>
 </html>
